@@ -1,0 +1,99 @@
+.planets {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+
+.body-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transform: rotate(25.2deg);
+}
+.planet {
+  cursor: pointer;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  animation: shine 2s ease-in-out infinite;
+  background-color: rgb(230, 224, 224);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  box-shadow: inset 10px 0px 12px -2px rgba(255, 255, 255, 0.2),
+    inset -70px 0px 50px 0px black, -5px 0px 10px -4px rgb(33, 8, 8);
+  background-size: 280%;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -150% center;
+  }
+}
+
+.body-outer::before {
+  transform: rotate(25.2deg);
+}
+
+.moon {
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.space1999.org%2Fgallery%2Fcgi_models_meshes%2Fae237g%2Fearth-moon_surface_2500x1250.jpg&f=1&nofb=1&ipt=3bdb01e49544723180798a0f9b18134936d28b7a4728a34cd3b49c3814279f74&ipo=images);
+  transform: scale(1.4);
+  animation: rotate 20s infinite linear;
+}
+.mars {
+  background-image: url(https://www.solarsystemscope.com/images/textures/full/2k_mars.jpg);
+  transform: scale(1.4);
+  animation: rotate 10s infinite linear;
+}
+
+.venus {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/venus2.jpg);
+  transform: scale(1.4);
+  animation: rotate 35s infinite linear;
+}
+
+/* tooltip */
+
+.planet .tooltip {
+  display: none;
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 5px;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(-25.2deg);
+  white-space: nowrap;
+  overflow: visible;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.moon .tooltip {
+  background: -webkit-linear-gradient(#ec460f, #a24f0f);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mars .tooltip {
+  background: -webkit-linear-gradient(#777777, #fff);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.venus .tooltip {
+  background: -webkit-linear-gradient(#777777, #520fd7);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.planet:hover .tooltip {
+  display: block;
+}

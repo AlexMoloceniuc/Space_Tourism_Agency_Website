@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AA | Moon</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+    <link rel="stylesheet" href="styles/moon.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" href="svgs/icons8-saturn-64.png" type="image/png"/>
+  </head>
+
+  <body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <main>
+      <div id="title">
+        <span> Welcome to the Moon </span>
+      </div>
+      <div class="planet-card">
+        <div class="body-outer">
+          <div
+            class="planet mars js-mars"
+            style="
+              background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.space1999.org%2Fgallery%2Fcgi_models_meshes%2Fae237g%2Fearth-moon_surface_2500x1250.jpg&f=1&nofb=1&ipt=3bdb01e49544723180798a0f9b18134936d28b7a4728a34cd3b49c3814279f74&ipo=images);
+            "
+          ></div>
+        </div>
+        <ul class="informations">
+          <li>Mass: 7.346 x 10^22 kg</li>
+          <li>Diameter: 3474.0 km</li>
+          <li>Gravity: 1.62 m/s</li>
+          <li>Average temperature: 0 K</li>
+        </ul>
+      </div>
+    </main>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/IK1I8KHCPm8"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <a
+      data-quiz="Q6O909T5P"
+      data-type="4"
+      href="https://take.quiz-maker.com/Q6O909T5P"
+      >Loading...</a
+    >
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        var ql = document.querySelectorAll(
+          "A[quiz],DIV[quiz],A[data-quiz],DIV[data-quiz]"
+        );
+        if (ql) {
+          if (ql.length) {
+            for (var k = 0; k < ql.length; k++) {
+              ql[k].id = "quiz-embed-" + k;
+              ql[k].href =
+                "javascript:var i=document.getElementById('quiz-embed-" +
+                k +
+                "');try{qz.startQuiz(i)}catch(e){i.start=1;i.style.cursor='wait';i.style.opacity='0.5'};void(0);";
+            }
+          }
+        }
+        i["QP"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://take.quiz-maker.com/3012/CDN/quiz-embed-v1.js",
+        "qp"
+      );
+    </script>
+  </body>
+</html>

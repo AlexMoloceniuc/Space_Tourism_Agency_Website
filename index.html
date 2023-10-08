@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/planets.css" />
+    <title>Astralis Agency</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="icon" href="icons8-saturn-64.png" type="image/png" />
+  </head>
+  <body>
+    <main>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="title">
+        <span> SPACE TRAVEL IS HERE </span>
+        <br />
+        <span> CHOOSE YOUR EXPERIENCE </span>
+      </div>
+      <div class="planets">
+        <div class="body-outer">
+          <div class="planet moon js-moon">
+            <div class="tooltip">EXPLORE THE MOON</div>
+          </div>
+        </div>
+        <div class="body-outer">
+          <div class="planet mars js-mars">
+            <div class="tooltip">EXPLORE MARS</div>
+          </div>
+        </div>
+        <div class="body-outer">
+          <div class="planet venus js-venus">
+            <div class="tooltip">EXPLORE VENUS</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <h1>PARTNERSHIPS</h1>
+        <div class="links">
+          <div class="partner" id="nasa">
+            <img src="svgs/icons8-nasa.svg" alt="" />
+          </div>
+          <div class="partner" id="spacex">
+            <img src="svgs/SpaceX-Logo.svg" alt="" />
+          </div>
+          <div class="partner" id="virgin-galactic">
+            <img src="svgs/Virgin_Galactic_logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const marsElement = document.querySelector(".js-mars");
+      const moonElement = document.querySelector(".js-moon");
+      const venusElement = document.querySelector(".js-venus");
+
+      marsElement.addEventListener("click", () => {
+        window.location.href = "mars-quiz.html";
+      });
+
+      moonElement.addEventListener("click", () => {
+        window.location.href = "moon-quiz.html";
+      });
+
+      venusElement.addEventListener("click", () => {
+        window.location.href = "venus-quiz.html";
+      });
+    </script>
+  </body>
+</html>
