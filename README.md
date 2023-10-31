@@ -1,5 +1,5 @@
 # Space_Tourism_Agency_Website
-Website for a Space Tourism Agency built with HTM, CSS &amp; JavaScript for NASA Space Apps Hackathon
+Website for a Space Tourism Agency built with HTML, CSS &amp; JavaScript for NASA Space Apps Hackathon.
 
 As part of the Nasa Space Apps Challenges hackathon, we made an educational website about space travelling that also provides customised itineraries for future travellers who want to visit the Solar System, starting with: the Moon, Mars, and Venus.
 
